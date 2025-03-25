@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "SIAPE Knowledge Search",
+  "name_for_model": "siape_search",
+  "description_for_human": "Busca informações do SIAPE a partir de comandos e consultas.",
+  "description_for_model": "Use this to answer questions about commands, processes and structures within the SIAPE system. Respond using the most relevant data from the search.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://siape-api.onrender.com/openapi.json"
+  },
+  "logo_url": "https://raw.githubusercontent.com/brutaro/SIAPE/main/logo.png",
+  "contact_email": "nick@seudominio.com",
+  "legal_info_url": "https://siape-api.onrender.com/legal"
+}
