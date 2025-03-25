@@ -4,6 +4,16 @@ import os
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from openai import OpenAI
+from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse
+
+@app.get("/.well-known/ai-plugin.json", include_in_schema=False)
+def serve_ai_plugin():
+    return FileResponse(".well-known/ai-plugin.json", media_type="application/json")
+
+@app.get("/.well-known/ai-plugin.json", include_in_schema=False)
+def serve_plugin_manifest():
+    return FileResponse(".well-known/ai-plugin.json", media_type="application/json")
 
 # Carrega .env
 load_dotenv()
